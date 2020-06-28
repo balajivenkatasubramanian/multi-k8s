@@ -1,6 +1,6 @@
-docker build -t balajivenkatasubramanian/multi-client:latest -t balajivenkatasubramanian/multi-clinet:$SHA -f ./client/Dockerfile 
-docker build -t balajivenkatasubramanian/multi-server:latest -t balajivenkatasubramanian/multi-server:$SHA -f ./server/Dockerfile /server
-docker build -t balajivenkatasubramanian/multi-worker:latest -t balajivenkatasubramanian/multi-worker:$SHA -f ./worker/Dockerfile /worker
+docker build -t balajivenkatasubramanian/multi-client:latest -t balajivenkatasubramanian/multi-clinet:$SHA -f ./client/Dockerfile ./client
+docker build -t balajivenkatasubramanian/multi-server:latest -t balajivenkatasubramanian/multi-server:$SHA -f ./server/Dockerfile ./server
+docker build -t balajivenkatasubramanian/multi-worker:latest -t balajivenkatasubramanian/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 docker push balajivenkatasubaramanian/multi-client
 docker push balajivenkatasubramanian/multi-server
 docker push balajivenkatasubramanian/multi-worker
